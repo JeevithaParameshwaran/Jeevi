@@ -45,12 +45,12 @@ int main()
     s2.dataplans="Available dataplan";
     s1.balancecheck();
     name=s1.getcompany();
-    cout<<name;
+    cout<<name<<"\n";
     n1=s1.isplanactive();
-    cout<<n1;
+    cout<<n1<<"\n";
     s2.balancecheck();
     name=s2.getcompany();
-    cout<<name;
+    cout<<name<<"\n";
     n1=s2.isplanactive();
     cout<<n1;
     return 0;
