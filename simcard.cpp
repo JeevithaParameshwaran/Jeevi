@@ -1,33 +1,34 @@
-#include<ostream>
-#include<istream>
+#include<iostream>
+
 using namespace std;
-
-class iplplayoffs
+class simcard
 {
-	public:
-		char team[40];
-		int win,loss;
-		void fun()
-		{
-			cout<<"Enter the team name:";
-	        cin>>team;
-        	cout<<"Enter the number of matches win";
-	         cin>>twin;
-	         cout<<"Enter the number of matches loss";
-          	cin>>loss;
-	       if(twin>=9)
-	       cout<<team<<"is eligible for playoffs!!!";
-	       else
-	       cout<<"Not eligible";
-	     
-        }
-
+    public:
+      string cname;
+      long int num;
+      float balance;
+      string dataplans;
+       simcard(string a,long int n,float b,string d)
+      {
+          cname=a;
+          num=n;
+          balance=b;
+          dataplans=d;
+      }
+      void dis()
+       {
+         cout<<cname<<"\n";
+         cout<<num<<"\n";
+         cout<<balance<<"\n";
+         cout<<dataplans<<"\n";
+      }
 };
 int main()
 {
-	iplplayoffs t1;
-	t1.fun();
-	return 0;
+    simcard s1("Airtel",9923456701,20.50,"No plan");simcard s2("Aircel",9876543210,50.00,"Active plan");
+    simcard s3("Vodafone",8796543234,45.00,"No plan");
+    s1.dis();
+    s2.dis();
+    s3.dis();
+    return 0;
 }
-	
-
